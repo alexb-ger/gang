@@ -23,11 +23,9 @@ margin: 0 auto;
 }
 .hero-banner{
 background-color: #007FFF;
-min-height: 100vh;
+height: 100vh;
 padding: 50px 20px;
 box-sizing: border-box;
-position: relative;
-overflow: hidden;
 
 
 }
@@ -46,17 +44,17 @@ overflow: hidden;
 	margin: 0;
 }
 
-.character1{
+.character 1{
 background: url(img/untitled2.svg) no-repeat 0 0;
 background-size: 100%;
-width: 500px;
-height: 512px;
-position: absolute; top: 40px; right: 15%;
+width: 400;
+height: 412;
+position: absolute; top: 123px; right: 90px;
 }
-.character2{
+.character 2{
 
 }
-.character3{
+.character 3{
 
 }
 
