@@ -8,6 +8,10 @@ h1{
 font-weight: 800;
 font-size: 50px;
 }
+h2{
+	font-size: 50px;
+	font-weight: 800;
+}
 h3{
 	font-weight: bold;
 	font-size: 30px;
@@ -17,13 +21,19 @@ font-weight: bold;
 font-size: 20px;
 
 }
+p{
+font-weight: bold;
+font-size: 30px;
+margin: 30px, 0;
+}
 .wrapper{
 width: 960px;
 margin: 0 auto;
 }
 .hero-banner{
 background-color: #007FFF;
-min-height: 100vh;
+
+min-height: 60vh;
 padding: 50px 20px;
 box-sizing: border-box;
 position: relative;
@@ -45,6 +55,7 @@ overflow: hidden;
 	color:white;
 	margin: 0;
 }
+
 
 .character1{
 background: url(img/untitled2.svg) no-repeat 0 0;
@@ -86,6 +97,7 @@ nav{
 	background-color: white;
 	box-shadow: 0 5px 8px rgba(0,0,0,.2);
 	position: sticky;
+	top: 0;
 }
 
 nav .logo{
@@ -97,24 +109,46 @@ nav .logo{
 	margin-left: 30px;
 	background: url(img/untitled3.svg) no-repeat 0 0;
 	background-size: 100%;
+	overflow: hidden;
+	text-indent: -9999px;
+
 }
 nav ul{
 	padding: 0;
-	margin: 0;
+	margin: 0 20px 0 0;
 }
 nav ul li{
 	padding: 0;
 	margin: 0;
+	display: block;
+	float: right;
+}
+nav ul li a{
+display: block;
+height: 100%;
+box-sizing: border-box;
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase;
+color: #111111;
+text-decoration:none;
+padding: 35px 10px;
+line-height: 30px;
 }
 
+.more-info{
+text-align: center;
+}
+
+
+
+
+
+
 /*
-<nav>
-		<a href="#" class="logo"> The Gang</a>
-		<ul>
-			<li><a href="#">Sign up</a></li>
-			<li><a href="#Story">The Story</a></li>
-			<li><a href="#more-info">More Info</a></li>
-			
-		</ul>
-	</nav>
+<div class="more-info" id="more-info">
+	<h2>Join the inner Circle</h2>
+	<p>Every week we will have   <span class="highlight">a meeting</span> online, i will the take by the hand in every step of the process</p>
+	<button class="cta">Sing me up</button>
+</div>
 	*/
