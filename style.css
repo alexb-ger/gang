@@ -247,33 +247,126 @@ font-weight: bold;
 
 .popup{
 	display: none;
+	position: fixed;
+	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	z-index: 2;
 }
+.popup.show{
+	display: block;
+}
+ .popup .blanket{
+ 	background-color: rgba(0,0,0,.7);
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
 
+}
+.popup .content{
+box-sizing: border-box;
+padding: 30px 40px;
+width: 960px;
+height: 500px;
+background-color: white;
+text-align: center;
+position: absolute;
+left: 50%;
+top:50%;
+margin-top: -250px;
+margin-left: -480px;
 
+}
+.popup h2{
+	margin: 0 0 20px ;
+}
+.popup .cta{
+	margin-top: 40px;
+}
+.popup .close{
+	width: 80px;
+	height: 80px;
+	background-color: #FF3300;
+	position: absolute;
+	 top: -40px;
+	right: -40px;
+	 border-radius: 50%;
+	 border:none;
+	 outline: none;
+	 overflow: hidden;
+	 text-indent: -999px;
+	 cursor: pointer;
+
+	}
+	.popup .row {
+
+	}
+	.popup .row:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.popup .item{
+float: left;
+width: 415px;
+margin-left: 40px;
+
+text-align: left;
+
+	}
+	.popup .item:first-child{
+		margin-left: 0;
+	}
+
+	.popup .item label{
+		display: block;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		margin-top: 10px;
+
+	}
+.popup .item input[type='text']{
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	border: 4px solid #111111;
+	height: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px 20px;
+}
 /*
-<div class="sep">
-	
-</div>
+<div class="popup">
+	<div class="blanket"></div>
+	<div class="content">
+		<h2>Fill in your details</h2>
+		<form action="">
+			<div class="item">
+			<label Your first Name></label>
+			<input type="text" placeholder="Awesomeface" value="Shirley">
+			</div>
+			<div class="item">
+			<label Your last Name></label>
+			<input type="text" placeholder="Circleface">
+			</div>
+			<div class="item">
+			<label Your favorite color></label>
+			<input type="text" placeholder="Red">
+			</div>
+			<div class="item">
+			<label Your favorite food></label>
+			<input type="text" placeholder="Apllepie">
+			</div>
+			<button class="close">I want In!</button>
+		</form>
+		<button class="close"> Close</button>
+	</div>
 
-<div class="Story" id="Story"> 
-	<ul class="nb-list">
-		<li class="blue"> Rock 'n Roll</li>
-		<li class="grey">&nbsp;</li>
-		<li class="yellow dragging ">Laughter</li>
-		<li class="red">Square Offs</li>
-		<li class="pink">Circuitous Routes</li>
-		<li class="salmon">Trigonometry</li>
-		<li class="blue">Rat Hats</li>
-		<li class="yellow">Being Silly</li>
-	</ul>
-	<h3> blablablablablaabla <br/>
-		blablabal
-	 </h3>
-	 <p>blablablablablablablalbablablablabla</p>
-	
-</div>
-
-<div class="sep">
 	
 </div>
 	*/
