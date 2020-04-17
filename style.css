@@ -139,8 +139,24 @@ line-height: 30px;
 .more-info{
 text-align: center;
 }
+.more-info p{
+	margin: 0 0 35px; 
+
+}
+.more-info h2{
+	margin: 50px 0 20px;
+
+}
 
 
+.highlight{
+	background-color: #FFADF9;
+	color: #FF3300;
+	padding: 0 8px 0;
+	line-height: 50px;
+	display: inline;
+	font-weight: bold;
+}
 
 
 
