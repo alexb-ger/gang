@@ -5,21 +5,20 @@ padding: 0;
 margin: 0;
 }
 h1{
-font-weight: 800;
-font-size: 50px;
+	font-weight: 800;
+	font-size: 50px;
 }
 h2{
-	font-size: 50px;
 	font-weight: 800;
+ 	font-size: 40px;
 }
 h3{
 	font-weight: bold;
 	font-size: 30px;
 }
 h4{
-font-weight: bold;
-font-size: 20px;
-
+	font-weight: bold;
+	font-size: 20px;
 }
 p{
 font-weight: bold;
@@ -32,7 +31,6 @@ margin: 0 auto;
 }
 .hero-banner{
 background-color: #007FFF;
-
 min-height: 60vh;
 padding: 50px 20px;
 box-sizing: border-box;
